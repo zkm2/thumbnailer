@@ -51,6 +51,7 @@ var samples = [...]string{
 	"too small.png",
 	"exact_thumb_size.jpg",
 	"meta_segfault.mp4",
+	"gary.jpg", // 140x140 px image that manages to crash ffmpeg
 
 	// Exif rotation compensation
 	"jannu_baseline.jpg",
