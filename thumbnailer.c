@@ -89,7 +89,7 @@ static AVFrame* select_best_frame(AVFrame* frames[], int size)
 static void alloc_buffer(struct Buffer* dst)
 {
     dst->size
-        = av_image_get_buffer_size(AV_PIX_FMT_RGBA, dst->width, dst->height, 1);
+        = av_image_get_buffer_size(AV_PIX_FMT_RGBA, dst->width, dst->height, 32);
     dst->data = malloc(dst->size);
 }
 
